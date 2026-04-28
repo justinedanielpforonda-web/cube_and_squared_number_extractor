@@ -2,6 +2,8 @@ with open("integer.txt", "r") as data:
     for line in data:
         unsorted_num = int(line.strip())
         if unsorted_num % 2 == 0:
-            print("even")
+            answer = unsorted_num ** 2
         else:
-            print("odd")
+            answer = unsorted_num ** 3
+        print(answer)
+
